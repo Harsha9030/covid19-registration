@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  background-color: black;
+}
+nav div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav div ul li {
+  color: white;
+  list-style-type: none;
+}
+nav img {
+  width: 140px;
+  height: 60px;
+  padding-left: 20px;
+}
+.links {
+  width: 50vw;
+  overflow: hidden;
+}
+.heading {
+  height: 80px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: red;
+}
+table {
+  width: 100vw;
+  padding: 20px;
+
+  margin-top: 40px;
+  table-layout: fixed;
+}
+.table {
+  position: relative;
+}
+th {
+  background-color: silver;
+  font-size: 12px;
+  padding: 5px;
+}
+td {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: rgb(0, 94, 218);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  position: absolute;
+  right: 50px;
+  top: -20px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp {
+  flex: 1;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.whatsapp i {
+  color: greenyellow;
+}
+.mobile {
+  flex: 1;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.mobile i {
+  color: blue;
+  margin-right: 10px;
+}
+.email {
+  flex: 1;
+  height: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.email i {
+  color: red;
+  margin-right: 10px;
+}
+
+.inputform {
+  width: 55vw;
+  height: 90vh;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.inputform.active {
+  display: block;
+}
+.inptheading {
+  height: 40px;
+  border-bottom: 1px solid grey;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.firstdiv {
+  width: 100%;
+  height: 35%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  line-height: 8px;
+
+  position: relative;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+.leftdiv {
+  width: 310px;
+  height: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  line-height: 8px;
+}
+.rightdiv {
+  width: 50%;
+  height: 100%;
+
+  justify-content: space-around;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  line-height: 8px;
+}
+
+.checkclass {
+  width: 100%;
+  height: 80px;
+  padding: 5px 20px;
+}
+.address {
+  width: 100%;
+  height: 25%;
+
+  padding-left: 20px;
+  line-height: 5px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.submit {
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reset {
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="text"] {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  line-height: 8px;
+  padding-left: 5px;
+}
+input[type="date"] {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  padding-left: 5px;
+}
+
+.address input {
+  width: 45%;
+  margin-top: 15px;
+}
+.checkme {
+  margin-left: 20px;
+}
+input[type="checkbox"] {
+  font-size: 13px;
+}
+label {
+  font-size: 13px;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal.active {
+  display: block;
+}
+.inptheading i {
+  cursor: pointer;
+}
+
+.edit {
+  background-color: green;
+  color: white;
+
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

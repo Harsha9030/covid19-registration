@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid</title>
+    <script
+      src="https://kit.fontawesome.com/f2088698d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.jpg" alt="" />
+      <div class="links">
+        <ul>
+          <li>Register</li>
+          <li>Corporate Training</li>
+          <li>Placements Page</li>
+          <li>Reviwes</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="heading">
+        <h1>Covid-19 Vaccine Registration</h1>
+      </div>
+      <div>
+        <div class="table">
+          <button class="btn" onclick="formtoggle()">
+            <i class="fas fa-plus-circle"></i> Register
+          </button>
+          <table>
+            <tr>
+              <th>FName</th>
+              <th>LName</th>
+              <th>Aadhar</th>
+              <th>Contact</th>
+              <th>DOB</th>
+              <th>Gender</th>
+              <th>c_history</th>
+              <th>Symptops</th>
+              <th>Address</th>
+              <th>Landmark</th>
+              <th>Pincode</th>
+              <th>state</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Sai Harsha</td>
+              <td>sahukari</td>
+              <td>123412341234</td>
+              <td>8919424566</td>
+              <td>1998-07-01</td>
+              <td>Male</td>
+              <td>No</td>
+              <td>Cough, Bodypains, Heaache,Fever</td>
+              <td>11-1-216/1,New Colony, Palasa, Andhrapradesh</td>
+              <td>Ayyapa Tiffins</td>
+              <td>532222</td>
+              <td>Andhrapradesh</td>
+              <td>
+                <div class="actions">
+                  <i class="far fa-edit edit"></i>
+                  <i class="far fa-trash-alt delete"></i>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></div>
+      <div class="mobile">
+        <i class="fas fa-phone-volume fa-2x"></i> Call us on: +91-8919424566
+      </div>
+      <div class="email">
+        <i class="far fa-envelope fa-2x"></i> Request A Call Back
+      </div>
+    </footer>
+    <div class="modal" onclick="formremove()"></div>
+    <form action="" class="inputform">
+      <div class="inptheading">
+        <h4>Register Covid-19 Vaccine</h4>
+        <i class="fas fa-times" onclick="formremove()"></i>
+      </div>
+
+      <div class="firstdiv">
+        <div class="leftdiv">
+          <div>
+            <h5>Name:</h5>
+            <br />
+            <input type="text" style="width: 150px" />
+            <input type="text" style="width: 150px" />
+          </div>
+          <div>
+            <h5>Contact Number</h5>
+            <br />
+            <input type="text" />
+          </div>
+          <div>
+            <h5>Gender</h5>
+            <br />
+
+            <input type="radio" />
+            <label>Male</label>
+
+            <input type="radio" />
+            <label>Female</label>
+
+            <input type="radio" />
+            <label>Other</label>
+          </div>
+        </div>
+        <div class="rightdiv">
+          <div>
+            <h5>Aadhar</h5>
+            <br />
+            <input type="text" />
+          </div>
+
+          <div>
+            <h5>Date of Birth</h5>
+            <br />
+            <input type="date" />
+          </div>
+          <div>
+            <h5>Have you been diagnised with covid-19?</h5>
+            <br />
+            <input type="radio" />
+            <label for="fname">Yes</label>
+            <input type="radio" />
+            <label for="fname">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="checkclass">
+        <h5>Please check all Symptops that apply?</h5>
+        <br />
+        <input type="checkbox" />
+        <label for="fname">Loss of taste/Smell</label>
+        <input type="checkbox" />
+        <label for="fname">Difficulty Breathing</label>
+        <input type="checkbox" />
+        <label for="fname">Cough</label>
+        <input type="checkbox" />
+        <label for="fname">Running Nose</label>
+        <input type="checkbox" />
+        <label for="fname">Body Pains</label>
+        <input type="checkbox" />
+        <label for="fname">Headache</label>
+        <input type="checkbox" />
+        <label for="fname">Sore throte</label>
+        <input type="checkbox" />
+        <label for="fname">Fever</label>
+      </div>
+      <div class="address">
+        <h5>Address</h5>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </div>
+      <div class="checkme">
+        <input type="checkbox" />
+        <label for="fname">check me out </label>
+        <br />
+        <button class="submit">Submit</button>
+        <button class="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
